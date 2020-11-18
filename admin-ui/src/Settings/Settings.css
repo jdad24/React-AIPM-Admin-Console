@@ -1,0 +1,169 @@
+.settings-container {
+    position: relative;
+    left: 20%;
+    top: 15%;
+    background-color: white;
+    height: 70%;
+    width: 60%;
+    border-radius: 5%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    /* color: white; */
+
+    background-color: gray
+}
+
+
+.start-kuka-container {
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.kuka-scoring-operations-container {
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* background-color: blue; */
+}
+
+.yaskawa-scoring-operations-container {
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* background-color: blue; */
+}
+
+.kuka-iot-container {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.yaskawa-iot-container {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kuka-model-container {
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.yaskawa-model-container {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kuka-maximo-work-order-container {
+    grid-row: 5/6;
+    grid-column: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yaskawa-maximo-work-order-container {
+    grid-row: 5/6;
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.on-button {
+    position: relative;
+    margin-right: 1.5%;
+    /* width: 10%; */
+}
+
+.off-button {
+    position: relative;
+    margin-left: 1.5%;
+    /* width: 10% */
+}
+
+.show-env-button {
+    position: relative;
+    margin-left: 1.5%;
+    /* width: 10% */
+}
+
+.submit-model {
+    position: relative;
+    /* font-size: 1vw; */
+    /* width: 30%; */
+
+}
+
+.change-model-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.nsd-button, .nsdrz-button, .nsc-button, .think-tires-button, .raisins-button {
+    position: relative;
+    margin-left: 1.5%;
+    /* width: 10%; */
+    font-size: 75%;
+    background-color: blue;
+}
+
+.kuka-start-title, .scoring-title, .iot-title, .change-model-title, .maximo-work-order-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 100%;
+}
+
+
+

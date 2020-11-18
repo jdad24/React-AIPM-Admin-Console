@@ -1,0 +1,26 @@
+.login-container {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.login-text {
+    font-weight: bold;
+    font-size: 100%;
+    position: relative;
+    /* background-color: red; */
+    top: 2.5%;
+    width: 100%;
+    text-align: center;
+}
+
+.form {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 40%; 
+}
