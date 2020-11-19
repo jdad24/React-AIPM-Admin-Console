@@ -1,0 +1,8 @@
+applications:
+  - name: AIPM Admin Console
+    disk_quota: 1G
+    instances: 1
+    memory: 256M
+    stack: cflinuxfs3
+    routes:
+      - route: http://aipm-admin-console.mybluemix.net/

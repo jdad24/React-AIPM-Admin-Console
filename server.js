@@ -5,8 +5,11 @@ const path = require('path')
 const session = require('express-session')
 var bodyParser = require('body-parser');
 
-const PORT = process.env.port || 3000
+const port = process.env.PORT || 3000
 const publicPath = path.join(__dirname, "admin-ui", "build")
+
+var FileStore = require('session-file-store')(session);
+var fileStoreOptions = {};
 
 const user = {
     username: "gscuser",
@@ -22,6 +25,7 @@ app.use(session({
     secret: 'credentials',
     resave: false,
     saveUninitialized: false,
+    store: new FileStore(fileStoreOptions),
     cookie: {
         expires: 300000
     }
@@ -91,6 +95,6 @@ app.get('/settings', (req, res, next) => {
 //     res.redirect('/login')
 // })
 
-app.listen(PORT, () => {
-    console.log("Admin UI Server Running on Port: ", PORT)
+app.listen(port, () => {
+    console.log("Admin UI Server Running on Port: ", port)
 })
